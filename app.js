@@ -1,14 +1,13 @@
 const express = require('express');
 const app = express();
-const debug = require('debug')('app');
+//const debug = require('debug')('app');
 const port = 3000;
 
 app.get("/",(req,res) =>{
 
-    res.send('Hello World สวัสดีครับ');
-    res.send('ไง i ma mee');
+    res.send('Hello World สวัสดีครับ = Hello');
 })
 
 app.listen(port,()=>{
-    debug("Listening on port %d",port);
+    console.log("Listening on port %d",port);
 })
